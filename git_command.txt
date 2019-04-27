@@ -1,0 +1,48 @@
+ディレクトリ移動
+cd C:/
+
+フォルダ作成
+mkdir git
+
+ディレクトリ移動（gitフォルダに）
+cd git
+
+ローカルにgithubのリポジトリクローンを作成する
+このときはマスターがすでにgithubにある状態
+git clone　git@github.com:hosakaichiro/new_solution.git
+↑sshのほう
+
+cdでクローンのリポジトリに移動する
+
+git branchでブランチを確認
+最初はmasterのみだと思う
+
+ブランチを切る（マスターから作業ブランチを作成すること）
+
+新しいブランチの作成
+git branch 新しいブランチの名前
+例えば[work]とかにする
+
+ブランチの切り替え
+git checkout ブランチの名前
+masterから切り替える
+
+gitコミット対象にする
+git add ファイル名
+
+git add git_command.txt
+
+addはしているけどcommitされていないやつを確認する
+git status
+
+コミットする
+git commit -a
+
+githubへpush
+git push origin ブランチ名
+
+更新したファイルを　addできる
+git add -u
+
+最新を落としてくる
+git pull origin work
